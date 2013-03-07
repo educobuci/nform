@@ -20,7 +20,7 @@ namespace NFormSample.Models
       {
         var validate = new ValidationSet<Car>(this);
         validate.Presence(c => c.Model);
-        validate.Presence(c => c.Manufacturer);
+        //validate.Presence(c => c.Manufacturer);
         validate.Format(c => c.Year, @"\d{4}");
         return validate;
       }

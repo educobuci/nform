@@ -2,9 +2,11 @@
 @{ViewBag.Title = "Index";}
 
 <h2>Index</h2>
-@using (var f = Html.FormFor(this.Model, "car_new", validate:true, renderWithDataList:true, html:new {action="/home/create", method="post"}))
+@using (var f = Html.FormFor(this.Model, "car_new", validate: true, renderWithDataList: true, html: new { action = "/home/create", method = "post" }))
 {
-  @f.Input("Model")
-  @f.Input("Year")
-  <input type="submit" />
+    @f.Input("Model")
+    @f.Input("Year")
+    <input type="submit" />
+    
+    
 }
